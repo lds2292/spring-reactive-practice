@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacking with Spring boot - Getting Started</title>
+</head>
+<body>
+<h1>Welcome to hacking with Spring Boot!</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat lorem vitae laoreet cursus.
+  Aliquam sodales ornare fringilla. Sed est sem, sodales sed finibus eu, malesuada nec augue.
+  Pellentesque sed congue elit. Fusce at ultrices mauris. Morbi sed quam viverra orci lobortis
+  rutrum. Mauris eu lectus neque. Aliquam malesuada dictum lorem, vel laoreet ligula interdum non.
+  Duis tempus consequat magna a sagittis. Curabitur a euismod augue. Nunc mauris odio, auctor et
+  ipsum eget, sagittis dignissim elit. Mauris viverra arcu porta, luctus enim non, tincidunt nisl.
+  Proin molestie rutrum ligula vel efficitur. Mauris nec sodales felis.
+</p>
+
+<h2>Inventory Management</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="item : ${items}">
+    <td th:text="${item.id}"></td>
+    <td th:text="${item.name}"></td>
+    <td th:text="${item.price}"></td>
+    <td th:text="${item.description}"></td>
+    <td>
+      <form method="post" th:action="@{'/add/' + ${item.id}}">
+        <input type="submit" value="Add to Cart"/>
+      </form>
+    </td>
+    <td>
+      <form th:method="delete" th:action="@{'/delete/' + ${item.id}}">
+        <input type="submit" value="Delete"/>
+      </form>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>My Cart</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Quantity</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="cartItem : ${cart.cartItems}">
+    <td th:text="${cartItem.item.id}"></td>
+    <td th:text="${cartItem.item.name}"></td>
+    <td th:text="${cartItem.quantity}"></td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

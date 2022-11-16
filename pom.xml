@@ -11,5 +11,6 @@
 
   <modules>
     <module>hacking-spring-boot-ch1-reactive</module>
+    <module>hacking-spring-boot-ch2-reactive</module>
   </modules>
 </project>

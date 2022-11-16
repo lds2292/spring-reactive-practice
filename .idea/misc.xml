@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/hacking-spring-boot-ch1-reactive/pom.xml" />
+        <option value="$PROJECT_DIR$/hacking-spring-boot-ch2-reactive/pom.xml" />
       </list>
     </option>
   </component>
