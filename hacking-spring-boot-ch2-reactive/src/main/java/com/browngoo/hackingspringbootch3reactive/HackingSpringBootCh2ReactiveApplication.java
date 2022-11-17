@@ -1,9 +1,7 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
 public class HackingSpringBootCh2ReactiveApplication {

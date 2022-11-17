@@ -1,4 +1,4 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 

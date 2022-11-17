@@ -1,7 +1,5 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
-import java.awt.Point;
-import java.util.Date;
 import java.util.Objects;
 import org.springframework.data.annotation.Id;
 

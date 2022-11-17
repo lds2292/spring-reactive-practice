@@ -1,15 +1,13 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
 import static org.springframework.data.mongodb.core.query.Criteria.byExample;
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
-import com.mongodb.client.model.Filters;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.ExampleMatcher.StringMatcher;
 import org.springframework.data.mongodb.core.ReactiveFluentMongoOperations;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 

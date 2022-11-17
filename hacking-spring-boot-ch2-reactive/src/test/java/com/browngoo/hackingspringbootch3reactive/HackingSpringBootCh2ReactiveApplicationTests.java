@@ -1,4 +1,4 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

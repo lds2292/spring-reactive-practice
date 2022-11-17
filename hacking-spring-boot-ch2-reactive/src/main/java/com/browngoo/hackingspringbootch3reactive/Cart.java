@@ -1,4 +1,4 @@
-package com.browngoo.hackingspringbootch2reactive;
+package com.browngoo.hackingspringbootch3reactive;
 
 import java.util.ArrayList;
 import java.util.List;
