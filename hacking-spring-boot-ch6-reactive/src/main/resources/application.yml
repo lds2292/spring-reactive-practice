@@ -1,0 +1,20 @@
+logging:
+  level:
+    org.springframework.boot.autoconfigure.mongo.embedded: off
+    org.mongodb.driver: off
+    org.springframework.data.mongodb.core: DEBUG
+    web: debug
+
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      port: 27017
+      database: test
+  mongodb:
+    embedded:
+      version: 3.5.5
+  devtools:
+    restart:
+      enabled: false
