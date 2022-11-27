@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hacking-spring-boot-ch1-reactive" />
+        <module name="hacking-spring-boot-ch7-reactive" />
         <module name="hacking-spring-boot-ch2-reactive" />
         <module name="hacking-spring-boot-ch3-reactive" />
         <module name="hacking-spring-boot-ch6-reactive" />
@@ -19,6 +20,7 @@
       <module name="hacking-spring-boot-ch2-reactive" options="-parameters" />
       <module name="hacking-spring-boot-ch3-reactive" options="-parameters" />
       <module name="hacking-spring-boot-ch6-reactive" options="-parameters" />
+      <module name="hacking-spring-boot-ch7-reactive" options="-parameters" />
     </option>
   </component>
 </project>
